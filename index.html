@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Jupiter notebook</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/tokyo-night.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/tokyo-night.css">
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<img width="300px" src="https://jupyter.org/assets/homepage/main-logo.svg" alt="logo">
+			</section>
+			<section>
+				<section>
+					<h1>
+						Jupyter Notebook
+					</h1>
+				</section>
+				<section>
+					<i>Jupyter Notebook</i> — это среда разработки, которая позволяет писать и выполнять код в
+					интерактивном формате. Она особенно популярна среди специалистов в области анализа данных и
+					машинного обучения.
+				</section>
+				<section>
+					<i>Jupyter Notebook</i> - создан в 2014 году <u>Фернардо Пересом</u> и <u>Брайном Гренджером</u>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>
+						Особенности <i>Jupyter Notebook</i>
+					</h1>
+				</section>
+				<section>
+					Код можно <b>разбивать</b> на отдельные ячейки и выполнять их в произвольном порядке.
+					<img src="public/image.png" alt="">
+				</section>
+				<section>
+					Результаты выполнения выводятся сразу под соответствующими ячейками.
+					<img src="public/image-1.png" alt="">
+				</section>
+				<section>
+					Поддерживает множество языков программирования, включая Python, R и Julia
+					<div>
+						<img src="https://www.python.org/static/img/python-logo.png" alt="">
+					</div>
+				</section>
+				<section>
+					Для <i>оформления текста</i> в Jupyter можно использовать язык разметки <i>Markdown</i>. Это
+					позволяет создавать
+					хорошо структурированные документы с пояснениями к коду.
+					<pre>
+						<code data-trim data-noescape>
+							# Мой первый документ на Markdown
+	
+	## Введение
+	
+	Markdown — это легкий язык разметки, который позволяет форматировать текст.
+	
+	### Преимущества
+	
+	- Простота использования
+	- Читаемость текста в исходном виде
+	
+	## Пример кода
+	
+	Вот пример функции на Python:
+	
+	```python
+	def hello_world():
+		print("Hello, World!")
+						</code>
+					</pre>
+				</section>
+				<section>
+					Jupyter позволяет легко создавать графики и диаграммы прямо в документе, что
+					упрощает анализ результатов.
+					<img src="public/image-2.png" alt="">
+				</section>
+			</section>
+			<section>
+				The End
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/qrcode/qrcode.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+
+	<script>
+		tailwind.config = {
+			corePlugins: {
+				preflight: false,
+			}
+		}
+	</script>
+	<script>
+
+		Reveal.initialize({
+			hash: true,
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealCustomControls],
+			slideNumber: true,
+		});
+	</script>
+</body>
+
+</html>
